@@ -1,8 +1,13 @@
+/* Pada setiap ukuran yang ditentukan font akan disesuaikan dengan mengganti pada root */
+
 @media (max-width: 1200px) {
   .main-container {
     width: 100%;
   }
 }
+
+/* ============================= */
+
 @media (max-width: 1024px) {
   :root {
     --h1-size: 2.5rem;
@@ -19,6 +24,9 @@
   }
   /* Home Section End */
 }
+
+/* ================================ */
+
 @media (max-width: 880px) {
   :root {
     --h1-size: 2rem;
@@ -30,10 +38,13 @@
     --p-size: 0.75rem;
   }
   /* Navbar Start */
+
+  /* Icon Menu akan tampil */
   .menu {
     display: block;
   }
 
+  /*Navbar akan disembunyikan  */
   .navbar {
     display: none;
     position: fixed;
@@ -58,11 +69,14 @@
     margin: 15px 0;
   }
 
+  /* Navbar yang memiliki class active akan muncul */
   .navbar.active-nav {
     display: flex;
     right: 0;
   }
   /* Navbar End */
+
+  /* ======================================== */
 
   /* Home Section Start  */
   .home {
@@ -81,18 +95,23 @@
   }
   /* Home Section End */
 
+  /* ================================================ */
+
   /* About Section Start */
   .about .container {
+    /* Membuat kolom menjadi 1 bagian dan 2 baris */
     grid-template-columns: 1fr;
     grid-template-rows: 30% 70%;
   }
   .about .container .sidebar {
+    /* Menghilangkan garis dikanan dan mengganti garis dibawah */
     border-right: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     height: 80px;
     width: 100%;
   }
   .about .container .sidebar ul {
+    /* sidebar akan menjadi menyamping */
     flex-direction: row;
     justify-content: center;
   }
@@ -107,6 +126,8 @@
   }
   /* About Section End */
 
+  /* ========================================================= */
+
   /* Contact Section Start */
   .contact .container-contact {
     display: flex;
@@ -114,6 +135,8 @@
   }
   /* Contact Section End */
 }
+
+/* ==================================================== */
 
 @media (max-width: 480px) {
   :root {
@@ -128,6 +151,9 @@
   .main-container {
     width: 100%;
   }
+
+  /* ================================================ */
+
   /* Home Section Start  */
   .home .title .btn-icon-title {
     gap: 10px;
@@ -137,6 +163,8 @@
   }
   /* Home Section End */
 
+  /* ============================================= */
+
   /* About Section Start */
   .about,
   .project,
@@ -145,7 +173,6 @@
   }
   .about .container {
     width: 100%;
-    /* grid-template-columns: 1fr; */
   }
   .about .container .sidebar {
     font-size: 0.625rem;
@@ -158,6 +185,8 @@
   }
   /* About Section End */
 
+  /* ======================================================== */
+
   /* Project Section Start */
   .project .container-project .project-card button {
     padding: 5px 7px;
@@ -165,8 +194,11 @@
   }
   /* Project Section end */
 
+  /* ====================================================== */
+
   /* Contact Section Start */
   .contact .form-container {
+    /* Membuat layout menjadi 1 kolom menurun */
     grid-template-columns: 1fr;
     grid-template-rows: 50px 50px auto;
     grid-template-areas:
